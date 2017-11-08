@@ -1,6 +1,6 @@
 {
   "name": "Aesop Ipsum",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "author": "Dev by Jake Mason, icons by Kalyn Smith, stories by Aesop",
   "manifest_version": 2,
   "description": "Provides lovable, timeless placeholder text.",

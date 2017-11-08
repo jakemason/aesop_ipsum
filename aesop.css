@@ -1,15 +1,15 @@
 :focus {
-  outline-color: transparent;
-  outline-style: none;
+	outline-color: transparent;
+	outline-style: none;
 }
 ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 5px;
+	-webkit-appearance: none;
+	width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(212,212,212,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+	border-radius: 4px;
+	background-color: rgba(212,212,212,.5);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 .relative{
 	position: relative;
@@ -20,30 +20,38 @@
 	position: relative;
 	height: 80%;
 	width:  97%;
-    margin: 10px 0 10px 10px;
-    border: 1px solid gray;
+	margin: 10px 0 10px 10px;
+	border: 1px solid gray;
 }
 #content{
-    position: absolute;
-    overflow-y: scroll;
-    margin: 10px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+	position: absolute;
+	overflow-y: scroll;
+	margin: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
 }
-p{
+p, label{
 	margin: 0;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	margin-bottom: 8px;
+}
+label{
+	display: block;
+	float: right;
+	margin-top: 3px;
+	-webkit-user-select: none;
 }
 h1, button{
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	margin-bottom: 8px;
 }
-#button{
+.button{
 	margin: 0;
 	position: absolute;
 	left: 10px;
@@ -56,13 +64,56 @@ h1, button{
 	transition: .2s all;
 	text-transform: uppercase;
 	letter-spacing: .5px;
-	-webkit-user-select: none;
+
+
 }
-#button:hover{
+.no-copy .button{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.button:hover{
 	background: #42A5F5;
 	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
 }
-#button:active{
+.button:active{
 	margin-top: 2px;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.18),0 2px 8px 0 rgba(0,0,0,0.15);
+}
+#copy{
+	left: 110px;
+}
+.checkbox-container{
+	position: absolute;
+	left: 50%;
+	margin-top: 8px;
+}
+.checkbox {
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .75rem;
+	cursor: pointer;
+	-webkit-appearance: none;
+	outline: 0;
+}
+.checkbox:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #42A5F5;
+	transition: all 0.3s ease-in-out;
+}
+.checkbox:checked:before {
+	height: 50%;
+	transform: rotate(-45deg);
+	border-top-style: none;
+	border-right-style: none;
 }
