@@ -5,4 +5,4 @@ Aesop Ipsum aims to provide an alternative to traditional Lorem Ipsum text that 
 
 This addon provides an easy means of copying individual stories into your clipboard while giving you the freedom to do some with, or without, including HTML tags.
 
-Thanks to my homie [Kalyn Smith](https://dribbble.com/kalynsmith) for the awesome graphic.
+Thanks to the wonderful [Kalyn Smith](https://dribbble.com/kalynsmith) for the awesome graphic.
